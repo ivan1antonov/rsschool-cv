@@ -2,4 +2,6 @@
 
 ## My skills: JS, JQvery, HTML, CSS
 
-### My contacts.
+### My contacts:
+
+My first version
