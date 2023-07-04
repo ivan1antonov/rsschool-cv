@@ -1,1 +1,5 @@
-https://github.com/ivan1antonov/rsschool-cv.git
+# My name: Ivan Antonov
+
+## My skills: JS, JQvery, HTML, CSS
+
+### My contacts.
