@@ -1,3 +1,66 @@
-body {
-  sdf
+html{
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+}
+a,
+li{
+  text-decoration: none;
+  list-style-type: none;
+  color: #000000;
+}
+ul,
+ol{
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: normal;
+  color: #242121;
+  letter-spacing: 0.3px;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.header-nav__list{
+  display: flex;
+  justify-content: space-between;
+}
+.header-nav{
+  margin-left: auto;
+  padding: 20px;
+  max-width: 350px;
+}
+.header-nav__list-item + .header-nav__list-item{
+  padding-left: 25px;
+}
+.header-nav__list-item{
+  text-decoration: none;
+}
+.header-nav__list-link{
+  transition: all 0.5s;
+}
+.header-nav__list-link:hover{
+  color: #829611;
+  transition: all 0.5s;
 }

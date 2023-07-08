@@ -3,6 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Noto+Serif:wght@400;700&family=Roboto+Condensed:wght@300;400;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
   <title>cv - Ivan Antonov</title>
 </head>
 <body>
@@ -11,13 +17,13 @@
       <nav class="header-nav">
         <ul class="header-nav__list">
           <li class="header-nav__list-item">
-            <a class="header-nav__list-link" href="">experience</a>
+            <a class="header-nav__list-link" href="#edu">education</a>
           </li>
           <li class="header-nav__list-item">
-            <a class="header-nav__list-link" href="">education</a>
+            <a class="header-nav__list-link" href="#about">about</a>
           </li>
           <li class="header-nav__list-item">
-            <a class="header-nav__list-link" href="">references</a>
+            <a class="header-nav__list-link" href="#ref">references</a>
           </li>
         </ul>
       </nav>
@@ -28,7 +34,7 @@
       <div class="wramper">
         <aside class="additional">
           <div class="additional-foto">
-            <img class="additional-foto__img" src="my_foto.jpg" alt="аватарка">
+            <img class="additional-foto__img" src="./my_foto.jpg" alt="аватарка">
           </div>
           <div class="additional-contact">
             <h3 class="additional-contact__title">contact me</h3>
@@ -41,7 +47,7 @@
             <div class="additional-skills__css">css</div>
             <div class="additional-skills__js">js</div>
           </div>
-          <div class="additional-follow">
+          <div class="additional-follow" id="ref">
             <h3 class="additional-follow__title">follow me</h3>
             <p class="additional-follow__vk">VK</p>
             <p class="additional-follow__vk-ref">vk.ru/alluminium13</p>
@@ -52,7 +58,7 @@
             <h1 class="cv-name__title">Ivan Antonov</h1>
             <h2 class="cv-name__prof">web-developer/ frontend</h2>
           </div>
-          <div class="cv-education">
+          <div class="cv-education" id="edu">
             <h3 class="cv-education__title">education</h3>
             <div class="cv-education__inner">
               <div class="cv-education__item">
@@ -93,7 +99,7 @@
               </div>
             </div>
           </div>
-          <div class="cv-about">
+          <div class="cv-about" id="about">
             <h3 class="cv-about__title">
               About me
             </h3>
