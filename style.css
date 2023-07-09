@@ -47,15 +47,16 @@ dd {
   justify-content: space-between;
   order: -1;
 }
+.header-wramper{
+  background: #3b3b3d;
+  border-bottom: 1px solid #ffffff;
+}
 .header-nav{
   display: flex;
   margin-left: auto;
   padding: 20px;
   max-width: 350px;
 }
-/* .header-box{
-  background-color: #3b3b3d;
-} */
 .header-nav__list-item + .header-nav__list-item{
   padding-left: 25px;
 }
@@ -68,6 +69,9 @@ dd {
 .header-nav__list-link:hover{
   color: #829611;
   transition: all 0.5s;
+}
+.header-nav__list-link{
+  color: #ffffff;
 }
 .main{
   font-family: 'Belanosima', sans-serif;
@@ -144,7 +148,8 @@ dd {
   text-transform: none;
   font-size: 16px;
 }
-.additional-skills h3, div{
+.additional-skills h3,
+.additional-skills div{
   text-transform: uppercase;
 }
 .additional-skills__html,
@@ -225,9 +230,14 @@ dd {
   font-size: 48px;
   letter-spacing: 13px;
   padding-bottom: 10px;
+  text-transform: uppercase;
 }
 .cv-name__prof{
   letter-spacing: 7px;
+  text-transform: uppercase;
+}
+.cv h3{
+  text-transform: uppercase;
 }
 .cv-education,
 .cv-code,
@@ -288,4 +298,25 @@ dd {
 }
 .cv-code__example p{
   margin: 0;
+}
+.footer-info{
+  background-color: #3b3b3d;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-top: 1px solid #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+.footer-info__img{
+  width: 130px;
+}
+.footer-info__git-link{
+  color: #ffffff;
+  font-size: 20px;
+}
+.footer-info__git-year{
+  margin: 0;
+  font-size: 16px;
 }
