@@ -54,4 +54,5 @@ English: A2+
 
 [Ivan Antonov / Git Hub](https://github.com/ivan1antonov)
 
-![rs_school](https://rs.school/js/)
+![rs_school](https://rs.school/images/rs_school.svg)
+[rs_school](https://rs.school/index.html)
