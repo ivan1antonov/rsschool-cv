@@ -20,7 +20,7 @@ ________________
 VK
 vk.ru/alluminium13
 
-# My name: IVAN Antonov
+# My name: IVAN ANTONOV
 ## web-developer/ frontend
 
 
