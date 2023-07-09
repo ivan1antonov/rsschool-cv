@@ -97,14 +97,14 @@ dd {
 }
 .additional-foto{
   display: flex;
+  overflow: hidden;
   justify-content: center;
+  border-radius: 50%;
   width: 310px;
   height: 310px;
   margin: 30px auto 0;
 }
 .additional-foto__img{
-  width: 310px;
-  object-fit: cover;
   display: block;
   border-radius: 50%;
 }
