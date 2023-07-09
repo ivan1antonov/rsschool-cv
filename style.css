@@ -78,7 +78,7 @@ dd {
 .additional{
   background-color: #3b3b3d;
   color: #ffffff;
-  min-width: 550px; 
+  min-width: 480px; 
 }
 .additional h3{
   text-transform: uppercase;
@@ -117,10 +117,10 @@ dd {
 .additional-follow__title::after{
   position: absolute;
   content: '';
-  left: 50px;
+  left: 28px;
   bottom: 0;
   height: 2px;
-  width: calc(100% - 50px);
+  width: calc(100% - 28px);
   background-color: #ffffff;
 }
 .additional-contact__addres{
@@ -193,6 +193,7 @@ dd {
 .additional-follow{
   margin-left: 50px;
   margin-bottom: 80px;
+  color: #ffffff;
 }
 .additional-follow__title{
   position: relative;
@@ -207,6 +208,11 @@ dd {
   font-family: 'Belanosima', sans-serif;
   font-size: 16px;
   margin-top: 0;
+}
+.cv h1, 
+.cv h3, 
+.cv p{
+  color: #3b3b3d;
 }
 .cv-name{
   display: flex;
@@ -223,7 +229,63 @@ dd {
 .cv-name__prof{
   letter-spacing: 7px;
 }
-.cv-education{
-  text-decoration: uppercase;
+.cv-education,
+.cv-code,
+.cv-about,
+.cv-language{
   font-size: 20px;
+  text-decoration: uppercase;
+  padding: 0 60px;
+  margin-bottom: 60px;
+}
+.cv-education__title,
+.cv-about__title,
+.cv-code__title,
+.cv-language__title{
+  position: relative;
+  padding-bottom: 15px;
+  padding-left: 20px;
+}
+.cv-education__title::after,
+.cv-about__title::after,
+.cv-code__title::after,
+.cv-language__title::after{
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: #6d6e70;
+}
+.cv-education__item{
+  display: flex;
+}
+.cv-education__item-main{
+  max-width: 240px;
+  width: 100%;
+  text-transform: none;
+}
+.cv-education__item-info{
+  max-width: 100%;
+}
+.cv-education__item-description{
+  font-size: 16px;
+  text-transform: none;
+}
+.cv-about{
+  font-size: 20px;
+  text-decoration: uppercase;
+  padding: 0 60px;
+  margin-bottom: 60px;
+}
+.cv-about__info{
+  text-transform: none;
+  font-size: 18px;
+}
+.cv-code__example{
+  text-transform: none;
+}
+.cv-code__example p{
+  margin: 0;
 }
