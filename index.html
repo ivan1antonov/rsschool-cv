@@ -25,7 +25,7 @@
               <a class="header-nav__list-link" href="#about">about</a>
             </li>
             <li class="header-nav__list-item">
-              <a class="header-nav__list-link" href="#ref">references</a>
+              <a class="header-nav__list-link" href="#project">project</a>
             </li>
           </ul>
         </nav>
@@ -37,7 +37,7 @@
       <div class="wramper">
         <aside class="additional">
           <div class="additional-foto">
-            <img class="additional-foto__img" src="./my_foto.jpg" alt="foto">
+            <img class="additional-foto__img" src="./image/my_foto.jpg" alt="foto">
           </div>
           <div class="additional-contact">
             <h3 class="additional-contact__title">contact me</h3>
@@ -56,7 +56,11 @@
           <div class="additional-follow" id="ref">
             <h3 class="additional-follow__title">follow me</h3>
             <p class="additional-follow__vk">VK</p>
-            <p class="additional-follow__vk-ref">vk.ru/alluminium13</p>
+            <a class="additional-follow__vk-ref" href="https://vk.ru/alluminium13">vk.ru/alluminium13</a>
+            <p class="additional-follow__vk">GIT</p>
+            <a class="additional-follow__vk-ref" href="https://github.com/ivan1antonov">github.com/ivan1antonov</a>
+            <p class="additional-follow__vk">Code wars</p>
+            <a class="additional-follow__vk-ref" href="https://www.codewars.com/users/rsschool_dee68f4b1a3f8a34">ivan1antonov</a>
           </div>
         </aside>
         <section class="cv">
@@ -111,8 +115,9 @@
             </h3>
             <p class="cv-about__info">
               I have good interpersonal skills, am an excellent team worker and very willing to learn and develop new
-              skills. I am
-              reliable and dependable and often seek new responsibilities within a wide range of employment areas.
+              skills. I am reliable and dependable and often seek new responsibilities within a wide range of employment areas.
+              I constantly work with:
+              Git, Html, Css, Sass, JS, webpack/gulp. I adhere to the code of conscience - BEM.
             </p>
           </div>
           <div class="cv-code">
@@ -122,9 +127,37 @@
             <div class="cv-code__example">
               <pre>
           <code>
-  function capitalizeWord(word){
-    return word[0].toUpperCase() + word.slice(1);
-  }            
+  // example from project wave
+  // choose galery btn
+  for(let i = 0; i < galeryBtn.length; i++){ 
+    galeryBtn[i].addEventListener('click', ()=> {
+      clearMoreGalery()
+      if (i === 0) {
+        fadeOut(galeryContent)
+        galeryBtn.forEach((el) => {
+          el.classList.add('active')
+        })
+        for (let i = 0; i < galeryItem.length; i++) { 
+          setTimeout(()=> {
+            fadeIn(galeryContent)
+            galeryItem[i].classList.add('active')
+          }, 500)
+        }
+      } else {
+        fadeOut(galeryContent)
+        galeryBtn.forEach((el) => {
+          el.classList.remove('active')
+        })
+        setTimeout(() => {
+          fadeIn(galeryContent)
+          activeSlide(i - 1)
+        }, 500)
+        galeryBtn[i].classList.add('active')
+      }
+      galindex = i
+      galeryShow.classList.add('active')
+    })
+  }
               </code>
               </pre>
             </div>
@@ -136,6 +169,22 @@
             <p class="cv-language__info">
               English: A2+
             </p>
+          </div>
+          <div class="cv-project" id="project">
+            <h3 class="cv-project__title">
+              My project
+            </h3>
+            <div class="cv-project__info">
+              <a class="cv-project__link" href="./project/js30-audio-player/index.html">
+                <img class="cv-project__link-img" src="./image/player.jpg" alt="proekt-player">
+              </a>
+              <a class="cv-project__link" href="./project/wave/index.html">
+                <img class="cv-project__link-img" src="./image/wave.jpg" alt="proekt-wave">
+              </a>
+              <a class="cv-project__link" href="./project/porshe/dist/index.html">
+                <img class="cv-project__link-img" src="./image/porshe.jpg" alt="proekt-porshe">
+              </a>
+            </div>
           </div>
         </section>
       </div>

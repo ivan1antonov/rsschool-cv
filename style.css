@@ -1,5 +1,6 @@
 html{
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
 *::after,
@@ -187,7 +188,7 @@ dd {
   width: calc(100% - 20%);
 }
 .additional-skills__js::after{
-  width: calc(100% - 80%);
+  width: calc(100% - 65%);
 }
 .additional-skills__html{
   padding-top: 20px;
@@ -213,6 +214,7 @@ dd {
   font-family: 'Belanosima', sans-serif;
   font-size: 16px;
   margin-top: 0;
+  color: #fff;
 }
 .cv h1, 
 .cv h3, 
@@ -242,6 +244,7 @@ dd {
 .cv-education,
 .cv-code,
 .cv-about,
+.cv-project,
 .cv-language{
   font-size: 20px;
   text-transform: uppercase;
@@ -251,6 +254,7 @@ dd {
 .cv-education__title,
 .cv-about__title,
 .cv-code__title,
+.cv-project__title,
 .cv-language__title{
   position: relative;
   padding-bottom: 15px;
@@ -259,6 +263,7 @@ dd {
 .cv-education__title::after,
 .cv-about__title::after,
 .cv-code__title::after,
+.cv-project__title::after,
 .cv-language__title::after{
   position: absolute;
   content: '';
@@ -298,6 +303,22 @@ dd {
 }
 .cv-code__example p{
   margin: 0;
+}
+.cv-project__title{
+  margin-bottom: 20px;
+}
+.cv-project__link{
+  display: block;
+  margin-bottom: 20px;
+  border: 1px solid #000;
+  transition: all 0.3s;
+}
+.cv-project__link:hover{
+  transition: all 0.3s;
+  transform: scale(1.05);
+}
+.cv-project__link-img{
+  width: 100%;
 }
 .footer-info{
   background-color: #3b3b3d;
