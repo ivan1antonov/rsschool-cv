@@ -1,0 +1,1408 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+h2 {
+  position: relative;
+  text-align: center;
+  font-family: "Forum", cursive;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  margin-top: 0;
+  color: #0c0c0e;
+}
+
+h2::after {
+  position: absolute;
+  content: '';
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 50px;
+  height: 1px;
+  background-color: #0c0c0e;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000000;
+  padding: 30px 20px 20px;
+}
+
+.header__title {
+  font-family: "Forum", cursive;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.header-menu {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 13px 40px 13px 0;
+}
+
+.header-list__item-link {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.header-list__item-link:hover {
+  color: #BB945F;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.header-list__item + .header-list__item {
+  margin-left: 30px;
+}
+
+.header-button__img {
+  height: 28px;
+  width: 28px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header-button__img img {
+  fill: #ffffff;
+}
+
+.header-burger {
+  display: none;
+  margin: 0 0 0 40px;
+}
+
+.header-burger__img {
+  background: url(../images/icon/burger.svg);
+  border: none;
+  height: 20px;
+  width: 45px;
+  cursor: pointer;
+}
+
+.header-button {
+  position: relative;
+}
+
+.drop-menu {
+  position: absolute;
+  content: '';
+  right: 0;
+  top: 100%;
+  background-color: #fff;
+  color: #000;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+  z-index: 10;
+  -webkit-transform: translateY(-400%);
+          transform: translateY(-400%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.drop-menu.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.drop-menu__profile {
+  padding: 5px 10px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.drop-menu__profile::after {
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 1px;
+  background-color: #BB945F;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.drop-menu__item + .drop-menu__item {
+  margin-top: 10px;
+}
+
+.drop-menu__link {
+  font-family: "Inter", sans-serif;
+  color: #000;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 0 10px;
+}
+
+.welcome {
+  margin-bottom: 20px;
+}
+
+.welcome-box {
+  position: relative;
+  height: 600px;
+  background-image: url(../images/Welcome.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.welcome__title {
+  position: absolute;
+  left: 0;
+  bottom: 160px;
+  font-family: "Forum", cursive;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 3px;
+  width: 600px;
+  padding: 35px 40px;
+  text-align: center;
+  background-color: #000000;
+  margin: 0;
+}
+
+.about {
+  margin-bottom: 20px;
+}
+
+.about__text {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.about-arrow {
+  display: none;
+  background-color: transparent;
+  border: none;
+  height: 10px;
+  width: 6px;
+}
+
+.about-arrow__right {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.about-box {
+  width: 98%;
+  overflow: hidden;
+  margin: 0 58px 20px;
+}
+
+.about-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.about-slider__item {
+  background-color: transparent;
+  border: none;
+}
+
+.about-slider__item-img {
+  width: 32%;
+}
+
+.about-slider__item-img + .about-slider__item-img {
+  margin-left: 1.5%;
+}
+
+.about-wramper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-dots {
+  margin: 0 auto 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-dots__item {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #0c0c0e;
+  cursor: pointer;
+  position: relative;
+}
+
+.about-dots__item::after {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: -5px;
+  top: -5px;
+  background-color: transparent;
+}
+
+.about-dots__item.active {
+  background-color: #bb945f;
+  cursor: auto;
+}
+
+.about-dots__item + .about-dots__item {
+  margin-left: 10px;
+}
+
+.about-dots__item-04 {
+  display: none;
+}
+
+.about-dots__item-05 {
+  display: none;
+}
+
+.favorites {
+  margin-bottom: 20px;
+}
+
+.favorites-box {
+  padding: 0 20px;
+}
+
+.favorites__title {
+  margin-bottom: 44px;
+}
+
+.favorites-season__pick {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 40px;
+}
+
+.favorites-season__form {
+  margin-bottom: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.favorites-season__form label + label {
+  margin-left: 77px;
+}
+
+.favorites-season__form-button {
+  position: relative;
+  display: block;
+  height: 18px;
+  width: 18px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  background: transparent;
+  margin-right: 20px;
+}
+
+.favorites-season__form-input {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.favorites-season__form-input:checked ~ .favorites-season__form-text {
+  font-weight: 700;
+}
+
+.favorites-season__form-input:checked ~ .favorites-season__form-button::after {
+  position: absolute;
+  content: '';
+  height: 8px;
+  width: 8px;
+  top: 3px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.favorites-season__form-label {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.favorites-season__form-label:first-child {
+  padding-left: 0;
+}
+
+.favorites-season__books-box {
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.favorites-season__books-box.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.favorites-season__books-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 590px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.favorites-season__books-info {
+  max-width: 550px;
+  width: 100%;
+  padding-left: 20px;
+  border: 1px solid #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.favorites-season__books-name {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.favorites-season__books-autor {
+  text-transform: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  margin: 0 0 20px;
+}
+
+.favorites-season__books-description {
+  width: 355px;
+  margin: 0 0 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  height: 320px;
+  overflow: hidden;
+}
+
+.favorites-season__books-buy {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 1px;
+  padding: 9px 27px;
+  border: 1px solid #0c0c0e;
+  margin-top: auto;
+  margin-bottom: 15px;
+  height: 30px;
+  width: 75px;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  border-radius: 3px;
+}
+
+.favorites-season__books-buy:not([disabled]):hover {
+  background-color: #bb945f;
+  border-color: #bb945f;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.favorites-season__books-buy.own {
+  color: #bb945f;
+  border-color: #bb945f;
+  cursor: auto;
+}
+
+.favorites-season__poster {
+  width: 40px;
+  position: relative;
+}
+
+.favorites-season__poster-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.staff-picks {
+  position: relative;
+  font-family: "Forum", cursive;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  margin-top: 14px;
+}
+
+.staff-picks::after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 60px;
+  left: 0;
+  bottom: 0;
+  background-color: #BB945F;
+}
+
+.coffee {
+  margin-bottom: 20px;
+}
+
+.coffee__info {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 20px;
+}
+
+.coffee-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.coffee-price__title {
+  font-family: "Forum", cursive;
+  font-weight: 400;
+  font-size: 40px;
+  color: #bb945f;
+  line-height: 40px;
+  letter-spacing: 2px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.coffee-price__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  color: #000000;
+  letter-spacing: 2px;
+}
+
+.coffee-price__item-name {
+  padding-right: 160px;
+  margin-right: 50px;
+  width: 100%;
+  position: relative;
+}
+
+.coffee-price__item-name::after {
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 1px;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #bb945f;
+}
+
+.coffee-price__drink {
+  text-align: left;
+  max-width: 48%;
+  padding: 20px;
+}
+
+.coffee-price__cake {
+  text-align: right;
+  max-width: 48%;
+  padding: 20px;
+}
+
+.contacts-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contacts-title {
+  margin-bottom: 40px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.contacts-item {
+  font-weight: 700;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.contacts-info {
+  text-align: left;
+  max-width: 48%;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+.contacts-info a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.contacts-info__call {
+  margin-bottom: 40px;
+}
+
+.contacts-info__senior {
+  margin-bottom: 25px;
+}
+
+.contacts-staff__director-link {
+  font-weight: 700;
+}
+
+.contacts-tel {
+  margin-bottom: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+}
+
+.contacts-map {
+  width: 717px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card {
+  padding-top: 20px;
+}
+
+.card-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.card-find__title {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #000000;
+  margin: 0 0 25px;
+  text-align: center;
+}
+
+.card-find__name {
+  font-family: "Forum", cursive;
+  font-weight: 400;
+  font-size: 30px;
+  color: #000000;
+  padding: 20px;
+  text-align: left;
+  margin: 0;
+}
+
+.card-find__reader-name {
+  margin: 5px 20px 15px;
+  width: 520px;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-family: "Forum", cursive;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 50px;
+  color: #bb945f;
+}
+
+.card-find__reader-name::-webkit-input-placeholder {
+  font-family: "Forum", cursive;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.card-find__reader-name:-ms-input-placeholder {
+  font-family: "Forum", cursive;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.card-find__reader-name::-ms-input-placeholder {
+  font-family: "Forum", cursive;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.card-find__reader-name::placeholder {
+  font-family: "Forum", cursive;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.card-find__button {
+  padding: 10px 40px;
+  border: 1px solid #000000;
+  background-color: transparent;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 1px;
+  display: block;
+  margin: 0 auto 30px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  border-radius: 2px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.card-find__button:hover {
+  background-color: #BB945F;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  border-color: #bb945f;
+}
+
+.card-form {
+  border: 3px solid #bb945f;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  margin: 15px;
+}
+
+.card-wramper {
+  background: #bb945f;
+  margin: 20px;
+  padding: 10px 0;
+}
+
+.card-wramper label {
+  display: block;
+}
+
+.card-sign {
+  text-align: right;
+  width: 476px;
+  font-family: "Inter", sans-serif;
+  padding-right: 20px;
+}
+
+.card-sign__title {
+  font-family: "Forum", cursive;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 35px;
+  color: #000000;
+}
+
+.card-sign__descr {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  margin-bottom: 35px;
+}
+
+.card-signup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.card-button {
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #000000;
+  border: 1px solid #000000;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-align: center;
+  margin-left: 20px;
+  width: 75px;
+  cursor: pointer;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  background-color: transparent;
+}
+
+.card-button:hover {
+  background-color: #BB945F;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  border-color: #bb945f;
+}
+
+.footer-wramper {
+  background: #000000;
+}
+
+.footer-box {
+  padding: 0 20px 21px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #ffffff;
+}
+
+.footer-box::after {
+  position: absolute;
+  content: '';
+  background-color: #ffffff;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  height: 1px;
+}
+
+.footer-info {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffffff;
+  min-width: 100%;
+}
+
+.footer-info__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-info__addres {
+  width: 229px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-info__addres-link {
+  color: #ffffff;
+}
+
+.footer-info__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.footer-info__social-item + .footer-info__social-item {
+  margin-left: 15px;
+}
+
+.footer-link {
+  padding: 44px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.footer-link__year {
+  min-width: 120px;
+}
+
+.footer-link__cources {
+  letter-spacing: 2px;
+  margin: 0 20px;
+}
+
+.footer-time__first {
+  text-align: end;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.footer-time__second {
+  text-align: end;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.footer-link a {
+  color: #ffffff;
+}
+
+@media (max-width: 1420px) {
+  .about-slider__item + .about-slider__item {
+    padding-left: 10px;
+  }
+  .about__text {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .header-list {
+    padding-left: 0;
+  }
+  .favorites-season__form {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .favorites-season__books-box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .favorites-season__books-item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .card-sign {
+    width: 80%;
+    text-align: center;
+    padding-left: 20px;
+    margin: 0 15px;
+  }
+  .card-panel {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card-signup {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacts-info {
+    max-width: 100%;
+  }
+  .contacts-info__staff-director {
+    margin-bottom: 100px;
+  }
+  .contacts-map {
+    margin: auto;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .contacts-map img {
+    width: 100%;
+  }
+  .contacts-box {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .header-box {
+    position: relative;
+  }
+  .header-list {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    right: 0;
+    top: 0;
+    width: 330px;
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+    display: block;
+    background-color: #000000;
+    margin: 0 auto;
+    padding: 115px 107px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .header-list__item + .header-list__item {
+    margin: 0 auto;
+    margin-top: 55px;
+  }
+  .header-list__item {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0 auto;
+  }
+  .header-list.active {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .header-button {
+    z-index: 5;
+  }
+  .header-burger {
+    display: block;
+    z-index: 5;
+  }
+  .header-burger.active::after {
+    position: absolute;
+    content: '';
+    background: url(../images/icon/burger-close.svg);
+    width: 32px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 32px;
+    right: 32px;
+    top: 30px;
+  }
+  .header-burger.active > .header-burger__img {
+    background: #000;
+  }
+  .coffee-price {
+    display: block;
+    padding: 20px;
+  }
+  .coffee-price__drink {
+    margin-right: auto;
+    max-width: 440px;
+    padding: 0;
+  }
+  .coffee-price__cake {
+    margin-left: auto;
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+  }
+  .welcome-box {
+    height: 605px;
+  }
+  .welcome__title {
+    bottom: 158px;
+  }
+  .about-arrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 9px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .about-box {
+    max-width: 450px;
+    margin-bottom: 5px;
+  }
+  .about-slider {
+    max-width: 614px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 22px;
+  }
+  .about-slider__item-02 {
+    display: none;
+  }
+  .about-slider__item-03 {
+    display: none;
+  }
+  .about-slider__item-img {
+    width: 100%;
+  }
+  .about-dots {
+    margin: 0 auto 60px;
+  }
+  .about-dots__item-04 {
+    display: block;
+  }
+  .about-dots__item-05 {
+    display: block;
+  }
+  .favorites-season__form {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .favorites-season__form label + label {
+    margin-left: 76px;
+  }
+  .coffee__info {
+    padding: 0 18px;
+  }
+  .contacts-tel {
+    letter-spacing: 2.2px;
+  }
+  .contacts-info__senior {
+    margin-bottom: 20px;
+  }
+  .card-panel {
+    margin-bottom: 42px;
+  }
+  .card-find__title {
+    letter-spacing: 0.4px;
+  }
+  .card-sign__title {
+    margin-bottom: 42px;
+  }
+  .card-sign__descr {
+    margin-bottom: 42px;
+    letter-spacing: 0.4px;
+  }
+  .card-signup {
+    width: 98%;
+  }
+  .card-find__name {
+    letter-spacing: 0.6px;
+  }
+  .footer-box {
+    padding: 0 20px 16px;
+  }
+}
+
+@media (max-width: 720px) {
+  .favorites-season__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .favorites-season__form-label {
+    padding: 0;
+  }
+  .favorites-season__form label + label {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 660px) {
+  .header-list.active {
+    width: 100%;
+  }
+  .header-title {
+    z-index: 5;
+  }
+  .welcome__title {
+    bottom: 0;
+  }
+  .favorites-season__books-description {
+    width: 100%;
+    margin: 0 0 260px;
+  }
+  .favorites-season__poster {
+    width: 0;
+  }
+  .favorites-season__books-info {
+    padding-right: 20px;
+  }
+  .card-find__reader-name {
+    width: 200px;
+  }
+  .card-find__reader-name::-webkit-input-placeholder {
+    font-size: 20px;
+  }
+  .card-find__reader-name:-ms-input-placeholder {
+    font-size: 20px;
+  }
+  .card-find__reader-name::-ms-input-placeholder {
+    font-size: 20px;
+  }
+  .card-find__reader-name::placeholder {
+    font-size: 20px;
+  }
+  .card-wramper {
+    margin: 10px;
+    padding: 0;
+  }
+  .card-wramper label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .coffee-price__item-name {
+    padding-right: 125px;
+  }
+  .coffee-price__item-name::after {
+    width: 50px;
+  }
+}
+
+@media (max-width: 640px) {
+  .welcome__title {
+    width: 370px;
+    font-size: 32px;
+    padding: 20px 20px;
+  }
+  .about-slider__item {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .coffee-price__item-name {
+    padding-right: 70px;
+  }
+  .coffee-price__cake {
+    text-align: left;
+  }
+}
+
+@media (max-width: 410px) {
+  .welcome-box {
+    height: 500px;
+  }
+  .welcome__title {
+    font-size: 25px;
+    bottom: 0;
+    width: 100%;
+  }
+  .about-slider__item {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .favorites-season__books-description {
+    margin: 0 0 310px;
+  }
+  .favorites-season__poster-img {
+    bottom: 60px;
+  }
+  .coffee-price__item-name {
+    padding-right: 0;
+  }
+  .coffee-price__item-name::after {
+    width: 0;
+  }
+  .contacts-info__staff-director {
+    margin-bottom: 40px;
+  }
+  .contact-info {
+    font-size: 16px;
+  }
+  .footer-info__block {
+    display: block;
+  }
+  .footer-info__addres {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  .footer-info__social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
+  }
+  .footer-time__first {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .footer-time__second {
+    text-align: center;
+  }
+  .footer-link {
+    display: block;
+    text-align: center;
+  }
+  .footer-link__cources {
+    margin: 20px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

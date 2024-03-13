@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brooklin Public Library</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-box">
+        <h1 class="header__title">Brooklyn Public Library</h1>
+        <div class="header-menu">
+          <nav class="header-nav">
+            <ul class="header-list">
+              <li class="header-list__item">
+                <a class="header-list__item-link" href="#about">About</a>
+              </li>
+              <li class="header-list__item">
+                <a class="header-list__item-link" href="#favorites">Favorites</a>
+              </li>
+              <li class="header-list__item">
+                <a class="header-list__item-link" href="#coffee">Coffee shop</a>
+              </li>
+              <li class="header-list__item">
+                <a class="header-list__item-link" href="#contacts">Contacts</a>
+              </li>
+              <li class="header-list__item">
+                <a class="header-list__item-link" href="#library">Library Card</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-button">
+            <button class="header-button__img">
+              <img src="./images/icon/icon_profile.svg" alt="icon_profile">
+            </button>
+            <div class="drop-menu">
+              <div class="drop-menu__profile">Profile</div>
+              <ul class="drop-menu__list">
+                <li class="drop-menu__item">
+                  <a class="drop-menu__link" href="#">Log in</a>
+                </li>
+                <li class="drop-menu__item">
+                  <a class="drop-menu__link" href="#">Register</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="header-burger">
+            <button class="header-burger__img">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="welcome">
+      <div class="container">
+        <div class="welcome-box">
+          <h3 class="welcome__title">Welcome
+            <br> to the Brooklyn Library
+          </h3>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="about__title">About</h2>
+        <p class="about__text">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop
+          inside
+        </p>
+        <div class="about-wramper">
+          <button class="about-slider__item about-arrow arrow-left">
+            <img class="about-arrow__left" src="images/icon/Arrow.svg" alt="arrow slider left">
+          </button>
+          <div class="about-box">
+            <div class="about-slider">
+              <img class="about-slider__item-img" src="images/about/image_1.jpg" alt="photo_library01">
+              <img class="about-slider__item-img" src="images/about/image_2.jpg" alt="photo_library02">
+              <img class="about-slider__item-img" src="images/about/image_3.jpg" alt="photo_library03">
+              <img class="about-slider__item-img" src="images/about/image_4.jpg" alt="photo_library05">
+              <img class="about-slider__item-img" src="images/about/image_5.jpg" alt="photo_library05">
+            </div>
+          </div>
+          <button class="about-slider__item about-arrow arrow-right">
+            <img class="about-arrow__right" src="images/icon/Arrow.svg" alt="arrow slider right">
+          </button>
+        </div>
+        <div class="about-dots">
+          <span class="about-dots__item about-dots__item-01 active"></span>
+          <span class="about-dots__item about-dots__item-02"></span>
+          <span class="about-dots__item about-dots__item-03"></span>
+          <span class="about-dots__item about-dots__item-04"></span>
+          <span class="about-dots__item about-dots__item-05"></span>
+        </div>
+      </div>
+    </section>
+    <section class="favorites">
+      <div class="container">
+        <div class="favorites-box">
+          <h2 class="favorites__title">Favorites</h2>
+          <div class="favorites-season">
+            <p class="favorites-season__pick">Pick favorites of season</p>
+            <form class="favorites-season__form" action="#">
+              <label class="favorites-season__form-label" style="width: 110px">
+                <input class="favorites-season__form-input" type="radio" name="season" value="winter" checked>
+                <span class="favorites-season__form-button"></span>
+                <span class="favorites-season__form-text">Winter</span>
+              </label>
+              <label class="favorites-season__form-label" style="width: 113px">
+                <input class="favorites-season__form-input" type="radio" name="season" value="spring">
+                <span class="favorites-season__form-button"></span>
+                <span class="favorites-season__form-text">Spring</span>
+              </label>
+              <label class="favorites-season__form-label" style="width: 131px">
+                <input class="favorites-season__form-input" type="radio" name="season" value="summer">
+                <span class="favorites-season__form-button"></span>
+                <span class="favorites-season__form-text">Summer</span>
+              </label>
+              <label class="favorites-season__form-label" style="width: 127px">
+                <input class="favorites-season__form-input" type="radio" name="season" value="autumn">
+                <span class="favorites-season__form-button"></span>
+                <span class="favorites-season__form-text">Autumn</span>
+              </label>
+            </form>
+            <div class="favorites-season__books">
+              <div class="favorites-season__books-box winter active">
+                <div class="favorites-season__books-item">
+                  <div class="favorites-season__books-info">
+                    <p class="favorites-season__books-logo staff-picks">Staff Picks</p>
+                    <h3 class="favorites-season__books-name">The Book Eaters</h3>
+                    <h4 class="favorites-season__books-autor">By Sunyi Dean</h4>
+                    <p class="favorites-season__books-description">An unusual sci-fi story about a book eater woman who
+                      tries
+                      desperately to save her dangerous mind-eater son from
+                      tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and
+                      a
+                      strong, complex protagonist. Not for the faint of heart.</p>
+                    <button class="favorites-season__books-buy">Buy</button>
+                  </div>
+                  <div class="favorites-season__poster">
+                    <img class="favorites-season__poster-img" src="./images/books/book-01.jpg" alt="book cover">
+                  </div>
+                </div>
+                <div class="favorites-season__books-item">
+                  <div class="favorites-season__books-info">
+                    <p class="favorites-season__books-logo staff-picks">Staff Picks</p>
+                    <h3 class="favorites-season__books-name">Cackle</h3>
+                    <h4 class="favorites-season__books-autor">By Rachel Harrison</h4>
+                    <p class="favorites-season__books-description">Are your Halloween movies of choice The Witches of
+                      Eastwick
+                      and Practical Magic? Look no further than here - where a
+                      woman recovering from a breakup moves to a quaint town in upstate New York and befriends a
+                      beautiful
+                      witch.</p>
+                    <button class="favorites-season__books-buy">Buy</button>
+                  </div>
+                  <div class="favorites-season__poster">
+                    <img class="favorites-season__poster-img" src="./images/books/book-02.jpg" alt="book cover">
+                  </div>
+                </div>
+                <div class="favorites-season__books-item">
+                  <div class="favorites-season__books-info">
+                    <p class="favorites-season__books-logo staff-picks">Staff Picks</p>
+                    <h3 class="favorites-season__books-name">Dante: Poet of the Secular World</h3>
+                    <h4 class="favorites-season__books-autor">By Erich Auerbach</h4>
+                    <p class="favorites-season__books-description">Auerbach's engaging book places the 'Comedy' within
+                      the
+                      tradition of epic, tragedy, and philosophy in general, arguing
+                      for Dante's uniqueness as one who raised the individual and his drama of soul into something of
+                      divine
+                      significance—an inspired introduction to Dante's main themes.</p>
+                    <button class="favorites-season__books-buy">Buy</button>
+                  </div>
+                  <div class="favorites-season__poster">
+                    <img class="favorites-season__poster-img" src="./images/books/book-03.jpg" alt="book cover">
+                  </div>
+                </div>
+                <div class="favorites-season__books-item">
+                  <div class="favorites-season__books-info">
+                    <p class="favorites-season__books-logo staff-picks">Staff Picks</p>
+                    <h3 class="favorites-season__books-name">The Last Queen</h3>
+                    <h4 class="favorites-season__books-autor">By Clive Irving</h4>
+                    <p class="favorites-season__books-description">A timely and revelatory new biography of Queen
+                      Elizabeth
+                      (and
+                      her family) exploring how the Windsors have evolved and
+                      thrived as the modern world has changed around them.</p>
+                    <button class="favorites-season__books-buy">Buy</button>
+                  </div>
+                  <div class="favorites-season__poster">
+                    <img class="favorites-season__poster-img" src="./images/books/book-04.jpg" alt="book cover">
+                  </div>
+                </div>
+              </div>
+              <div class="favorites-season__books-box spring">
+                <div class="favorites-season__books-item">
+                  <div class="favorites-season__books-info">
+                    <p class="favorites-season__books-logo staff-picks">Staff Picks</p>
+                    <h3 class="favorites-season__books-name">The Body</h3>
+                    <h4 class="favorites-season__books-autor">By Stephen King</h4>
+                    <p class="favorites-season__books-description">Powerful novel that takes you back to a nostalgic
+                      time,
+                      exploring both the beauty and danger and loss of innocence that
+                      is youth.</p>
+                    <button class="favorites-season__books-buy">Buy</button>
+                  </div>
+                  <div class="favorites-season__poster">
+                    <img class="favorites-season__poster-img" src="./images/books/book-05.jpg" alt="book cover">
+                  </div>
+
+                </div>
+                <div class="favorites-season__books-item">
+                  <div class="favorites-season__books-info">
+                    <p class="favorites-season__books-logo staff-picks">Staff Picks</p>
+                    <h3 class="favorites-season__books-name">Carry: A Memoir of Survival on Stolen Land</h3>
+                    <h4 class="favorites-season__books-autor">By Toni Jenson</h4>
+                    <p class="favorites-season__books-description">This memoir about the author's relationship with gun
+                      violence
+                      feels both expansive and intimate, resulting in a lyrical
+                      indictment of the way things are.</p>
+                    <button class="favorites-season__books-buy">Buy</button>
+                  </div>
+                  <div class="favorites-season__poster">
+                    <img class="favorites-season__poster-img" src="./images/books/book-06.jpg" alt="book cover">
+                  </div>
+                </div>
+                <div class="favorites-season__books-item">
+                  <div class="favorites-season__books-info">
+                    <p class="favorites-season__books-logo staff-picks">Staff Picks</p>
+                    <h3 class="favorites-season__books-name">Days of Distraction</h3>
+                    <h4 class="favorites-season__books-autor">By Alexandra Chang</h4>
+                    <p class="favorites-season__books-description">A sardonic view of Silicon Valley culture, a
+                      meditation
+                      on
+                      race, and a journal of displacement and belonging, all in one
+                      form-defying package of spare prose.</p>
+                    <button class="favorites-season__books-buy">Buy</button>
+                  </div>
+                  <div class="favorites-season__poster">
+                    <img class="favorites-season__poster-img" src="./images/books/book-07.jpg" alt="book cover">
+                  </div>
+                </div>
+                <div class="favorites-season__books-item">
+                  <div class="favorites-season__books-info">
+                    <p class="favorites-season__books-logo staff-picks">Staff Picks</p>
+                    <h3 class="favorites-season__books-name">Dominicana</h3>
+                    <h4 class="favorites-season__books-autor">By Angie Cruz</h4>
+                    <p class="favorites-season__books-description">A fascinating story of a teenage girl who marries a
+                      man
+                      twice
+                      her age with the promise to bring her to America. Her
+                      marriage is an opportunity for her family to eventually immigrate. For fans of Isabel Allende and
+                      Julia
+                      Alvarez.</p>
+                    <button class="favorites-season__books-buy">Buy</button>
+                  </div>
+                  <div class="favorites-season__poster">
+                    <img class="favorites-season__poster-img" src="./images/books/book-08.jpg" alt="book cover">
+                  </div>
+                </div>
+              </div>
+              <div class="favorites-season__books-box summer">
+                <div class="favorites-season__books-item">
+                  <div class="favorites-season__books-info">
+                    <p class="favorites-season__books-logo staff-picks">Staff Picks</p>
+                    <h3 class="favorites-season__books-name">Crude: A Memoir</h3>
+                    <h4 class="favorites-season__books-autor">By Pablo Fajardo & ​​Sophie Tardy-Joubert</h4>
+                    <p class="favorites-season__books-description">Drawing and color by Damien Roudeau | This book
+                      illustrates
+                      the struggles of a group of indigenous Ecuadoreans as they
+                      try to sue the ChevronTexaco company for damage their oil fields did to the Amazon and her people
+                    </p>
+                    <button class="favorites-season__books-buy">Buy</button>
+                  </div>
+                  <div class="favorites-season__poster">
+                    <img class="favorites-season__poster-img" src="./images/books/book-09.jpg" alt="book cover">
+                  </div>
+                </div>
+                <div class="favorites-season__books-item">
+                  <div class="favorites-season__books-info">
+                    <p class="favorites-season__books-logo staff-picks">Staff Picks</p>
+                    <h3 class="favorites-season__books-name">Let My People Go Surfing</h3>
+                    <h4 class="favorites-season__books-autor">By Yvon Chouinard</h4>
+                    <p class="favorites-season__books-description">Chouinard—climber, businessman,
+                      environmentalist—shares
+                      tales
+                      of courage and persistence from his experience of founding
+                      and leading Patagonia, Inc. Full title: Let My People Go Surfing: The Education of a Reluctant
+                      Businessman, Including 10 More Years of Business Unusual.</p>
+                    <button class="favorites-season__books-buy">Buy</button>
+                  </div>
+                  <div class="favorites-season__poster">
+                    <img class="favorites-season__poster-img" src="./images/books/book-10.jpg" alt="book cover">
+                  </div>
+                </div>
+                <div class="favorites-season__books-item">
+                  <div class="favorites-season__books-info">
+                    <p class="favorites-season__books-logo staff-picks">Staff Picks</p>
+                    <h3 class="favorites-season__books-name">Shark Dialogues: A Novel</h3>
+                    <h4 class="favorites-season__books-autor">By Kiana Davenport</h4>
+                    <p class="favorites-season__books-description">An epic saga of seven generations of one family
+                      encompasses
+                      the tumultuous history of Hawaii as a Hawaiian woman gathers
+                      her four granddaughters together in an erotic tale of villains and dreamers, queens and
+                      revolutionaries,
+                      lepers and healers.</p>
+                    <button class="favorites-season__books-buy">Buy</button>
+                  </div>
+                  <div class="favorites-season__poster">
+                    <img class="favorites-season__poster-img" src="./images/books/book-11.jpg" alt="book cover">
+                  </div>
+                </div>
+                <div class="favorites-season__books-item">
+                  <div class="favorites-season__books-info">
+                    <p class="favorites-season__books-logo staff-picks">Staff Picks</p>
+                    <h3 class="favorites-season__books-name">The Great Fire</h3>
+                    <h4 class="favorites-season__books-autor">By Lou Ureneck</h4>
+                    <p class="favorites-season__books-description">The harrowing story of an ordinary American and a
+                      principled
+                      Naval officer who, horrified by the burning of Smyrna, led
+                      an extraordinary rescue effort that saved a quarter of a million refugees from the Armenian
+                      Genocide
+                    </p>
+                    <button class="favorites-season__books-buy">Buy</button>
+                  </div>
+                  <div class="favorites-season__poster">
+                    <img class="favorites-season__poster-img" src="./images/books/book-12.jpg" alt="book cover">
+                  </div>
+                </div>
+              </div>
+              <div class="favorites-season__books-box autumn">
+                <div class="favorites-season__books-item">
+                  <div class="favorites-season__books-info">
+                    <p class="favorites-season__books-logo staff-picks">Staff Picks</p>
+                    <h3 class="favorites-season__books-name">Casual Conversation</h3>
+                    <h4 class="favorites-season__books-autor">By Renia White</h4>
+                    <p class="favorites-season__books-description">White's impressive debut collection takes readers
+                      through
+                      and
+                      beyond the concepts of conversation and the casual - both
+                      what we say to each other and what we don't, examining the possibilities around how we construct
+                      and
+                      communicate identity.</p>
+                    <button class="favorites-season__books-buy">Buy</button>
+                  </div>
+                  <div class="favorites-season__poster">
+                    <img class="favorites-season__poster-img" src="./images/books/book-13.jpg" alt="book cover">
+                  </div>
+                </div>
+                <div class="favorites-season__books-item">
+                  <div class="favorites-season__books-info">
+                    <p class="favorites-season__books-logo staff-picks">Staff Picks</p>
+                    <h3 class="favorites-season__books-name">Rickey: The Life and Legend</h3>
+                    <h4 class="favorites-season__books-autor">By Howard Bryant</h4>
+                    <p class="favorites-season__books-description">With the fall rolling around, one can't help but
+                      think
+                      of
+                      baseball's postseason coming up! And what better way to
+                      prepare for it than reading the biography of one of the game's all-time greatest performers, the
+                      Man
+                      of
+                      Steal, Rickey Henderson?</p>
+                    <button class="favorites-season__books-buy">Buy</button>
+                  </div>
+                  <div class="favorites-season__poster">
+                    <img class="favorites-season__poster-img" src="./images/books/book-14.jpg" alt="book cover">
+                  </div>
+                </div>
+                <div class="favorites-season__books-item">
+                  <div class="favorites-season__books-info">
+                    <p class="favorites-season__books-logo staff-picks">Staff Picks</p>
+                    <h3 class="favorites-season__books-name">Slug: And Other Stories</h3>
+                    <h4 class="favorites-season__books-autor">By Megan Milks</h4>
+                    <p class="favorites-season__books-description">Exes Tegan and Sara find themselves chained together
+                      by
+                      hairballs of codependency. A father and child experience the
+                      shared trauma of giving birth to gods from their wounds.</p>
+                    <button class="favorites-season__books-buy">Buy</button>
+                  </div>
+                  <div class="favorites-season__poster">
+                    <img class="favorites-season__poster-img" src="./images/books/book-15.jpg" alt="book cover">
+                  </div>
+                </div>
+                <div class="favorites-season__books-item">
+                  <div class="favorites-season__books-info">
+                    <p class="favorites-season__books-logo staff-picks">Staff Picks</p>
+                    <h3 class="favorites-season__books-name">The Great Fire</h3>
+                    <h4 class="favorites-season__books-autor">By Lou Ureneck</h4>
+                    <p class="favorites-season__books-description">The harrowing story of an ordinary American and a
+                      principled
+                      Naval officer who, horrified by the burning of Smyrna, led
+                      an extraordinary rescue effort that saved a quarter of a million refugees from the Armenian
+                      Genocide
+                    </p>
+                    <button class="favorites-season__books-buy">Buy</button>
+                  </div>
+                  <div class="favorites-season__poster">
+                    <img class="favorites-season__poster-img" src="./images/books/book-16.jpg" alt="book cover">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="coffee" id="coffee">
+      <div class="container">
+        <h2 class="coffee__title">Coffee Shop</h2>
+        <p class="coffee__info">In our library, we have of cozy coffee shop, welcoming in customers with frothy
+          cappuccinos and friendly conversation.
+          you can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also you can try
+          desserts from bakery.</p>
+        <div class="coffee-price">
+          <div class="coffee-price__drink">
+            <h5 class="coffee-price__drink-title  coffee-price__title">Coffee & Tea</h5>
+            <div class="coffee-price__drink-item coffee-price__item">
+              <p class="coffee-price__drink-name coffee-price__item-name">Cold Brew Coffee</p>
+              <div class="coffee-price__drink-price">$3</div>
+            </div>
+            <div class="coffee-price__drink-item coffee-price__item">
+              <p class="coffee-price__drink-name coffee-price__item-name">French Press Pot</p>
+              <div class="coffee-price__drink-price">$5</div>
+            </div>
+            <div class="coffee-price__drink-item coffee-price__item">
+              <p class="coffee-price__drink-name coffee-price__item-name">Espresso</p>
+              <div class="coffee-price__drink-price">$2</div>
+            </div>
+            <div class="coffee-price__drink-item coffee-price__item">
+              <p class="coffee-price__drink-name coffee-price__item-name">Cappuccino</p>
+              <div class="coffee-price__drink-price">$4</div>
+            </div>
+            <div class="coffee-price__drink-item coffee-price__item">
+              <p class="coffee-price__drink-name coffee-price__item-name">Hot tea</p>
+              <div class="coffee-price__drink-price">$2</div>
+            </div>
+            <div class="coffee-price__drink-item coffee-price__item">
+              <p class="coffee-price__drink-name coffee-price__item-name">Cold tea</p>
+              <div class="coffee-price__drink-price">$2</div>
+            </div>
+          </div>
+          <div class="coffee-price__cake">
+            <h5 class="coffee-price__cake-title coffee-price__title">Desserts & Cakes</h5>
+            <div class="coffee-price__cake-item coffee-price__item">
+              <p class="coffee-price__cake-name coffee-price__item-name">Forest Gateau</p>
+              <div class="coffee-price__cake-price">$16</div>
+            </div>
+            <div class="coffee-price__cake-item coffee-price__item">
+              <p class="coffee-price__cake-name coffee-price__item-name">Blue Moon</p>
+              <div class="coffee-price__cake-price">$16</div>
+            </div>
+            <div class="coffee-price__cake-item coffee-price__item">
+              <p class="coffee-price__cake-name coffee-price__item-name">Truffle Cake</p>
+              <div class="coffee-price__cake-price">$15</div>
+            </div>
+            <div class="coffee-price__cake-item coffee-price__item">
+              <p class="coffee-price__cake-name coffee-price__item-name">Chocolate Cake</p>
+              <div class="coffee-price__cake-price">$18</div>
+            </div>
+            <div class="coffee-price__cake-item coffee-price__item">
+              <p class="coffee-price__cake-name coffee-price__item-name">Poet’s Dream Cake</p>
+              <div class="coffee-price__cake-price">$16</div>
+            </div>
+            <div class="coffee-price__cake-item coffee-price__item">
+              <p class="coffee-price__cake-name coffee-price__item-name">Pineapple Cake</p>
+              <div class="coffee-price__cake-price">$14</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <h2 class="contacts__title">Our Contacts</h2>
+        <div class="contacts-box">
+          <div class="contacts-info">
+            <div class="contacts-info__call">
+              <h5 class="contacts-title contacts-item">For All Library Inquiries:</h5>
+              <div class="contacts-tel">
+                Please call
+                <a class="contacts-tel__link" href="tel:+7(617)7302370">(617) 730-2370</a>
+              </div>
+              <div class="contacts-tel">
+                For TTY service, please call <a class="contacts-tel__link" href="tel:+7(617)73023700">(617) 730-2370</a>
+              </div>
+              <div class="contacts-tel">
+                Putterham Library: <a class="contacts-tel__link" href="tel:+7(617)7302385">(617) 730-2385</a>
+              </div>
+            </div>
+            <div class="contacts-info__staff">
+              <p class="contacts-info__senior contacts-item">
+                Senior Staff
+              </p>
+              <p class="contacts-info__staff-director">
+                Library Director:
+                <a class="contacts-staff__director-link" href="mailto:AmandaHirst@gmail.com">Amanda Hirst</a>
+              </p>
+            </div>
+          </div>
+          <div class="contacts-map">
+            <img src="./images/contacts/map.jpg" alt="map_addres_office" class="contacts-map__img">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="card" id="library">
+      <div class="container">
+        <h2 class="card__title">Digital Library Cards</h2>
+        <div class="card-panel">
+          <div class="card-find">
+            <h5 class="card-find__title">Find your Library card</h5>
+            <form class="card-form" action="#">
+              <div class="card-wramper">
+                <p class="card-find__name">Brooklyn Public Library</p>
+                <label>
+                  <input class="card-find__reader-name" name="find_card" type="text" placeholder="Reader's name">
+                </label>
+                <label>
+                  <input class="card-find__reader-name" name="find_card" type="number" placeholder="Card number">
+                </label>
+              </div>
+              <button class="card-find__button">Check the card</button>
+            </form>
+          </div>
+          <div class="card-sign">
+            <h5 class="card-sign__title">Get a reader card</h5>
+            <p class="card-sign__descr">You will be able to see a reader card after logging into account or you can
+              register a new account</p>
+            <div class="card-signup">
+              <button class="card-signup__button card-button">Sign Up</button>
+              <button class="card-log__button card-button">Log in</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wramper">
+        <div class="footer-box">
+          <div class="footer-info">
+            <div class="footer-info__block foote-info__block01">
+              <div class="footer-info__addres">
+                <a class="footer-info__addres-link"
+                  href="https://www.google.com/maps/place/286+Cadman+Plaza+W,+Brooklyn,+NY+11201,+%D0%A1%D0%A8%D0%90/@40.6956458,-73.9912976,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25a49b649b8c3:0x6342a2291cea2e!8m2!3d40.6956458!4d-73.9912976!16s%2Fg%2F11s2lgz8ns?entry=ttu">
+                  286 Cadman Plaza, New York, NY 11238, United States
+                </a>
+              </div>
+              <p class="footer-time__first">
+                Mon - Fri <br>
+                08:00 am - 07:00 pm
+              </p>
+            </div>
+            <div class="footer-info__block footer-info__block02">
+              <ul class="footer-info__social">
+                <li class="footer-info__social-item">
+                  <a class="footer-info__social-link" href="https://rs.school/js-stage0/">
+                    <img class="footer-info__social-twitter" src="./images/social/twitter-icon.svg" alt="twitter-icon">
+                  </a>
+                </li>
+                <li class="footer-info__social-item">
+                  <a class="footer-info__social-link" href="https://rs.school/js-stage0/">
+                    <img class="footer-info__social-instagram" src="./images/social/instagram-icon.svg"
+                      alt="instagram-icon">
+                  </a>
+                </li>
+                <li class="footer-info__social-item">
+                  <a class="footer-info__social-link" href="https://rs.school/js-stage0/">
+                    <img class="footer-info__social-facebook" src="./images/social/facebook-icon.svg"
+                      alt="facebook-icon">
+                  </a>
+                </li>
+              </ul>
+              <p class="footer-time__second">
+                Sat - Sun <br>
+                10:00 am - 06:00 pm
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-link">
+          <div class="footer-link__year">
+            2023
+          </div>
+          <div class="footer-link__cources">
+            <a class="footer-link__cources-rs" href="https://rs.school/js-stage0/">The Rolling Scopes School</a>
+          </div>
+          <div class="footer-link__git">
+            <a class="footer-link__git-name" href="https://github.com/ivan1antonov">ivan antonov</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+
+</html>
