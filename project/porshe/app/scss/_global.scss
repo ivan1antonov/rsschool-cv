@@ -1,0 +1,52 @@
+body {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #4a4e51;    
+}
+
+.container{
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+a{
+  text-decoration: none; 
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;  
+}
+p{
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400; 
+}
+button{
+  transition: all 0.5;
+  cursor: pointer;
+}
+h1{
+  font-size: 64px;
+  line-height: 94px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+}
+h2{
+  font-size: 48px;
+  line-height: 54px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+}
+h3{
+  font-size: 24px;
+  line-height: 35px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+}
+h6{  
+  font-size: 22px;
+  font-weight: 700;
+  color: #323639;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+}
