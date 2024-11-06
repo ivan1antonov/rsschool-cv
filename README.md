@@ -1,1 +1,1 @@
-rsschoo-cv
+https://ivan1antonov.github.io/rsschool-cv
