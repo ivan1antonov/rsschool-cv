@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="./style.css">
   <title>CV - Ivan Antonov</title>
 </head>
-
 <body>
   <header class="header">
     <div class="container">
@@ -27,7 +26,7 @@
               <a class="header-nav__list-link" href="#about">about</a>
             </li>
             <li class="header-nav__list-item">
-              <a class="header-nav__list-link" href="#ref">references</a>
+              <a class="header-nav__list-link" href="#project">project</a>
             </li>
           </ul>
         </nav>
@@ -131,17 +130,36 @@
             <div class="cv-code__example">
               <pre>
           <code>
-  function strCount(obj){
-    let count = 0;
-    for (let el in obj) {
-      if (typeof (obj[el]) === 'string'){
-        count++;
+  // example from project wave
+  // choose galery btn
+  for(let i = 0; i < galeryBtn.length; i++){ 
+    galeryBtn[i].addEventListener('click', ()=> {
+      clearMoreGalery()
+      if (i === 0) {
+        fadeOut(galeryContent)
+        galeryBtn.forEach((el) => {
+          el.classList.add('active')
+        })
+        for (let i = 0; i < galeryItem.length; i++) { 
+          setTimeout(()=> {
+            fadeIn(galeryContent)
+            galeryItem[i].classList.add('active')
+          }, 500)
+        }
+      } else {
+        fadeOut(galeryContent)
+        galeryBtn.forEach((el) => {
+          el.classList.remove('active')
+        })
+        setTimeout(() => {
+          fadeIn(galeryContent)
+          activeSlide(i - 1)
+        }, 500)
+        galeryBtn[i].classList.add('active')
       }
-      if (typeof (obj[el]) === 'object'){
-        count += strCount(obj[el])
-      }
-    }
-    return count;
+      galindex = i
+      galeryShow.classList.add('active')
+    })
   }
               </code>
               </pre>
@@ -155,7 +173,7 @@
               English: A2+
             </p>
           </div>
-          <div class="cv-project">
+          <div class="cv-project" id="project">
             <h3 class="cv-project__title">
               My project
             </h3>
@@ -163,8 +181,11 @@
               <a class="cv-project__link" href="./project/js30-audio-player/index.html">
                 <img class="cv-project__link-img" src="./image/player.jpg" alt="proekt-player">
               </a>
-              <a class="cv-project__link" href="./project/Library/index.html">
-                <img class="cv-project__link-img" src="./image/library.jpg" alt="proekt-lybrary">
+              <a class="cv-project__link" href="./project/wave/index.html">
+                <img class="cv-project__link-img" src="./image/wave.jpg" alt="proekt-wave">
+              </a>
+              <a class="cv-project__link" href="./project/porshe/dist/index.html">
+                <img class="cv-project__link-img" src="./image/porshe.jpg" alt="proekt-porshe">
               </a>
             </div>
           </div>
@@ -313,5 +334,4 @@
     </div>
   </footer>
 </body>
-
 </html>
